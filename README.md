@@ -20,13 +20,13 @@ Below you can see how I did it using Foundry!
 
 3. Call `enableChain()` on both contracts to allow the transfer of the xNFT between both chains:
 
-[Sepolia](https://sepolia.etherscan.io/tx/0x0c0a36037e9c09598c0df1c92067a202e3f5ec704ddab8a963ba8d643d4a5fad):
+  [Sepolia](https://sepolia.etherscan.io/tx/0x0c0a36037e9c09598c0df1c92067a202e3f5ec704ddab8a963ba8d643d4a5fad):
 
   ```bash
   cast send 0xB382AF264298f48D17bF5C5A92486c3237b73314  --rpc-url ethereumSepolia --private-key=$PRIVATE_KEY "enableChain(uint64,address,bytes)" $ARB_SEPOLIA_CHAIN_SELECTOR 0xB382AF264298f48D17bF5C5A92486c3237b73314 0x97a657c90000000000000000000000000000000000000000000000000000000000030d40
   ```
 
-[Arbitrum Sepolia](https://sepolia.arbiscan.io/tx/0x51350be4777130c6d5162e3af03efeebf6e4e0afc72e07583df501e5e17eb76d):
+  [Arbitrum Sepolia](https://sepolia.arbiscan.io/tx/0x51350be4777130c6d5162e3af03efeebf6e4e0afc72e07583df501e5e17eb76d):
 
   ```bash
   cast send 0x3C0Add1316010354D27395F4c5F652502596cAfe --rpc-url arbitrumSepolia --private-key=$PRIVATE_KEY "enableChain(uint64,address,bytes)" $SEPOLIA_CHAIN_SELECTOR 0x3C0Add1316010354D27395F4c5F652502596cAfe 0x97a657c90000000000000000000000000000000000000000000000000000000000030d40
